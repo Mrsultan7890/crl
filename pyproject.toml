@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crl"
+version = "1.1.0"
+description = "Pure Python async web crawling with BM25 + semantic relevance ranking."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+keywords = ["crawling", "scraping", "relevance", "bm25", "semantic", "nlp", "async", "playwright", "sitemap", "duckduckgo"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Text Processing :: Indexing",
+    "Typing :: Typed",
+]
+dependencies = [
+    "httpx[http2,brotli]>=0.27",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "rank_bm25>=0.2.2",
+    "numpy>=1.26",
+    "duckduckgo-search>=6.0",
+]
+
+[project.optional-dependencies]
+semantic = ["sentence-transformers>=3.0", "torch>=2.0"]
+js = ["playwright>=1.40"]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.23", "httpx"]
+all = ["sentence-transformers>=3.0", "torch>=2.0", "playwright>=1.40"]
+
+[project.urls]
+Homepage = "https://github.com/crl-py/crl"
+Issues = "https://github.com/crl-py/crl/issues"
+
+[project.scripts]
+crl = "crl.cli:entry_point"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["crl*"]
+
+[tool.setuptools.package-data]
+crl = ["py.typed"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

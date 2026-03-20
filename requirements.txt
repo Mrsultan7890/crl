@@ -1,0 +1,19 @@
+# Core dependencies
+httpx[http2,brotli]>=0.27
+beautifulsoup4>=4.12
+lxml>=5.0
+rank_bm25>=0.2.2
+numpy>=1.26
+duckduckgo-search>=6.0
+
+# Semantic ranking (optional but recommended)
+sentence-transformers>=3.0
+torch>=2.0
+
+# JS rendering (optional)
+# pip install playwright && playwright install chromium
+# playwright>=1.40
+
+# Dev/test
+# pytest>=8.0
+# pytest-asyncio>=0.23
