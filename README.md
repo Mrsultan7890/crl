@@ -3,9 +3,10 @@
 > Pure Python async web crawling + BM25 & semantic relevance ranking.
 
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://pypi.org/project/crl)
-[![PyPI](https://img.shields.io/pypi/v/crl)](https://pypi.org/project/crl)
+[![PyPI](https://img.shields.io/pypi/v/crawl-relevance-layers)](https://pypi.org/project/crawl-relevance-layers)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-201%20passing-brightgreen)]()
+[![GitHub](https://img.shields.io/badge/github-Mrsultan7890%2Fcrl-black?logo=github)](https://github.com/Mrsultan7890/crl)
 
 ---
 
@@ -30,17 +31,17 @@ CRL is a pure Python library that combines async web crawling with intelligent r
 ## Install
 
 ```bash
-pip install crl
+pip install crawl-relevance-layers
 ```
 
 With semantic ranking (recommended):
 ```bash
-pip install crl[semantic]
+pip install crawl-relevance-layers[semantic]
 ```
 
 With JS rendering:
 ```bash
-pip install crl playwright
+pip install crawl-relevance-layers playwright
 playwright install chromium
 ```
 
