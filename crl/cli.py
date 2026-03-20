@@ -26,7 +26,7 @@ from typing import List, Optional
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="crl",
-        description="CRL — Crawl Relevance Layers: async web crawling + relevance ranking.",
+        description="CRL — Crawl Relevance Layers: async web crawling + relevance ranking.\nBy @who_is_the_black_hat · https://github.com/Mrsultan7890/crl",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )

@@ -4,11 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "crawl-relevance-layers"
-version = "1.1.0"
+version = "1.1.1"
 description = "Pure Python async web crawling with BM25 + semantic relevance ranking."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.9"
+authors = [{name = "Mrsultan7890"}]
 keywords = ["crawling", "scraping", "relevance", "bm25", "semantic", "nlp", "async", "playwright", "sitemap", "duckduckgo"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -43,6 +44,7 @@ Homepage = "https://github.com/Mrsultan7890/crl"
 Repository = "https://github.com/Mrsultan7890/crl"
 Issues = "https://github.com/Mrsultan7890/crl/issues"
 Changelog = "https://github.com/Mrsultan7890/crl/blob/main/CHANGELOG.md"
+Instagram = "https://www.instagram.com/who_is_the_black_hat"
 
 [project.scripts]
 crl = "crl.cli:entry_point"

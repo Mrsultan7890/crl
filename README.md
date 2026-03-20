@@ -524,4 +524,9 @@ Optional:
 ## License
 
 MIT — free to use in commercial and open source projects.
-# crl
+
+---
+
+## Author
+
+Made by [@who_is_the_black_hat](https://www.instagram.com/who_is_the_black_hat) · [GitHub](https://github.com/Mrsultan7890/crl)

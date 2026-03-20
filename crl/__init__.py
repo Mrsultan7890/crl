@@ -63,7 +63,7 @@ from .extractor import extract as extract_structured
 from .js_renderer import render_sync, js_crawl, js_crawl_sync, is_available as js_available
 from .output import to_markdown, to_sqlite
 
-__version__ = "1.1.0"
+__version__ = "1.1.1"
 __all__ = [
     "crawl",
     "acrawl",
